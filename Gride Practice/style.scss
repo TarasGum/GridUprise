@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700;900&display=swap");
+@import "reset";
+$primary-color: #244d4d;
+$light-color: #fff;
+$primari-width: 75rem;
+@mixin logo($logo-color) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+
+  color: $logo-color;
+}
+@mixin h($fz: 2rem, $fc: $primary-color) {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: $fz;
+  line-height: 68px;
+  color: $fc;
+}
+@mixin p($fc: #444444) {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+
+  color: $fc;
+}
+
+.container {
+  max-width: $primari-width;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 50px;
+  &__container {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    column-gap: 50px;
+  }
+
+  &__logo {
+    @include logo($primary-color);
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(4.375rem, 1fr));
+    column-gap: 50px;
+  }
+
+  &__list-item {
+  }
+
+  &__link {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    transition: color 0.3s ease-in;
+    color: #161616;
+    &:hover {
+      color: $primary-color;
+      transition: color 0.3s ease-in;
+    }
+  }
+}
+
+.main {
+}
+.hero {
+  &__container {
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  &__img-wrapper {
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  &_paragraph {
+    max-width: 488px;
+    @include p($light-color);
+  }
+
+  &__header {
+    @include h(3.5rem, $light-color);
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 172.58px;
+    height: 56px;
+
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+
+    color: #244d4d;
+    background: #ffffff;
+  }
+}

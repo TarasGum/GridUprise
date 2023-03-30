@@ -1,0 +1,16 @@
+.grid-wrapper {
+  display: grid;
+
+  grid-template-areas:
+    "box box box"
+    "aside content content ";
+}
+.header {
+  grid-area: box;
+}
+.aside {
+  grid-area: aside;
+}
+.main {
+  grid-area: content;
+}

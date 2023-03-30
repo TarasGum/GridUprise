@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+
+  font-size: 30px;
+  padding: 20px;
+  background-color: #85e0e3;
+  margin-bottom: 20px;
+}
+
+.grid-inline {
+  display: inline-grid;
+
+  font-size: 30px;
+  padding: 20px;
+  background-color: #8587e7;
+}
+//first-line,first-letter не працюють

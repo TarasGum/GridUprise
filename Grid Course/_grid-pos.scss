@@ -1,0 +1,35 @@
+.grid-wrapper {
+  height: 600px;
+  display: grid;
+  justify-content: center;
+
+  grid-template: repeat(2, 100px) / repeat(3, 400px);
+  align-items: start;
+  justify-items: center;
+  align-content: center;
+}
+.grid_item1 {
+  background-color: #dcfff7;
+
+  //   grid-column-start: 3;
+  //   grid-column-end: 1;
+  //   grid-row-start: 1;
+  //   grid-row-end: 2;
+
+  //span
+
+  //   grid-column: 1/1;
+  //   grid-row: 2/3;
+}
+.grid_item2 {
+  //order: 0;
+}
+.grid_item3 {
+}
+.grid_item4 {
+  justify-self: start;
+}
+.grid_item5 {
+}
+.grid_item6 {
+}

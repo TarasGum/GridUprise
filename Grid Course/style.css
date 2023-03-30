@@ -1,0 +1,98 @@
+div {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  width: 400px;
+  height: 120px;
+  font-size: 70px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  background-color: #e785b1;
+  margin: 0 auto;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.btn:hover {
+  transition: all 0.3s;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 150px;
+  font-size: 75px;
+  box-shadow: 0 0 50px 10px #e785b1;
+}
+
+.element {
+  text-align: center;
+  border: 2px dashed #85e0e3;
+  margin: 5px 5px;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  font-size: 30px;
+  padding: 20px;
+  background-color: #85e0e3;
+  margin-bottom: 20px;
+}
+
+.grid-inline {
+  display: inline-grid;
+  font-size: 30px;
+  padding: 20px;
+  background-color: #8587e7;
+}
+
+.grid_body {
+  display: grid;
+}
+.grid_item {
+  background-color: rgba(149, 240, 222, 0.1294117647);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-areas: "box box box" "aside content content ";
+}
+
+.header {
+  grid-area: box;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: content;
+}
+
+.grid-wrapper {
+  height: 600px;
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(2, 100px)/repeat(3, 400px);
+  align-items: start;
+  justify-items: center;
+  align-content: center;
+}
+
+.grid_item1 {
+  background-color: #dcfff7;
+}
+
+.grid_item4 {
+  justify-self: start;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.grid {
+  &_body {
+    display: grid;
+
+    // justify-content: center;
+    // grid-template-columns: 400px 400px 20%; //% від всієї ширини
+    // grid-template-rows: 1fr 1fr;
+
+    // grid-template-columns: fit-content(400px) minmax(100px, 700px) 14%; //auto додати текст, мінімальну не можна, можна тільки максимальну
+    // grid-template-rows: 1fr 1fr;
+
+    // grid-template-columns: repeat(3, 1fr) 300px;
+    // grid-template-rows: repeat(2, 1fr);
+
+    // grid-template: repeat(3, 1fr) / 2fr 1fr;
+    // grid-auto-rows: 200px; //додати 7й в html
+  }
+
+  &_item {
+    background-color: #95f0de21;
+  }
+}
